@@ -10,7 +10,7 @@
 body{
 	font-family: Times New Roman;
 	color: white;
-  	background-image: url("felixsexy.gif")
+  	background-image: url("file:///home/felix/felixmclean/felixsexy.gif")
 }
 
 a {
@@ -31,7 +31,6 @@ a {
 	<div id="errors" class="alert alert-error"><ul><li>Password is a required field.</li><li>E-Mail is a required field.</li></ul></div>
 	<div style="position: relative; height: 220px; margin: 20px 0;">
 		<div class="signin">
-			<form action="index.html" method="post">
 				<input type="hidden" name="_sourcePage" value="A6pwJ1v6htOABrIjWljTEFi2Wv8__H-UfoE-KanQKBFOZEKz2MzjRcTT7GBC9PsSOxX66I6ibGg=" /><input type="hidden" name="csrfToken" value="LhB8z1PdSCC4SJc7zaqvspkKBzEAgVk0" /><input type="hidden" name="pageTimestamp" value="1613803653170" />
 				<input type="hidden" name="signin" value="true" />
 				<input type="hidden" name="next" value="" />
@@ -41,8 +40,10 @@ a {
 				<label style="margin-top: 5px;">Password:</label>
 				<input type="password" name="user.password" id="password" autocomplete="off" value="" tabindex="2" style="width: 390px;"/>
 				<div style="margin-top: 10px;">
+					<a href="index.html">
 					<button type="submit" name="forgot" class="left" tabindex="-1">Forgot Password?</button> 
 					<button type="submit" name="signin" class="right" tabindex="3">Sign In</button>
+				</a>
 				</div>
 			</form>
 		</div>
