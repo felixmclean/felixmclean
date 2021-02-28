@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	
+
 <title>Felix McLean</title>
 <style>
 
@@ -17,21 +18,33 @@ a {
   text-decoration: none; /* no underline */
 }
 
-</style>
+.myGallery {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 10%;
+}
 
+.myGallery img {
+  width: 100%;
+}
+
+
+</style>
+</script>
 </head>
 
 <body>
 
-<FONT SIZE=5>
-<OL><b>
-<a href="https://www.youtube.com/c/felixmclean/videos">Videos</a>
-<p><a href="images.html">Imagebored</a></p>
-<p><a href="contact.html">Contact</a></p>
-<p>Login</p>
 
-</b></OL>
-</FONT>
+<center>
+<div class="myGallery">
+		<a href="images.html"><img src="imagebored_en.png"></a>
+		<a href="https://www.youtube.com/c/felixmclean"><img src="videos_en.png"></a>
+		<a href="contact.html"><img src="contact_en.png"></a>
+		<img src="login_en.png">
+</div>
+</center>
 
 </body>
 </html>
