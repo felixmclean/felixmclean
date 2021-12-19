@@ -22,10 +22,77 @@ a {
 </head>
 
 <body>
-<video autoplay="autoplay" playsinline="" muted="" loop="loop" poster="https://brckhmptn.com/images/poster.png" style="height:100%; width:100%;">
-<source src="https://brckhmptn.com/videos/RR-bg-vid.mp4" type="video/mp4">
+
+<div id="loader" style="display: none;">
+<br><br><br>
+<br><br><br>
+
+<script>
+setTimeout(function() {    
+    fullyLoaded();
+    }, 5300);
+
+function fullyLoaded() {
+    $("#loader").fadeOut("slow");
+}
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function () {
+    $('#slideshow > div:first')
+        .fadeOut(400)
+        .next()
+        .fadeIn(800)
+        .end()
+        .appendTo('#slideshow');
+}, 2000);
+</script>
+
+
+<video autoplay="autoplay" playsinline="" muted="" loop="loop" poster="http://brckhmptn.com/images/poster.png" style="height:100%; width:100%;">
+<source src="http://brckhmptn.com/videos/RR-bg-vid.mp4" type="video/mp4">
 <source src="link to your webm video" type="video/webm">
 </video>
+
+
+<div class="centered">
+
+<a href="/">
+<img src="http://brckhmptn.com/images/bh6_.png" width="75px">
+
+<br><br>
+
+<img src="http://brckhmptn.com/images/RR_GLOW_EDIT_2.png" width="650px">
+</a>
+
+<br><br><br>
+
+<div id="desc">
+<br>
+<a href="http://brckhmptn.com/listen">LISTEN</a>
+
+<br>
+</div>
+
+<br><br><br>
+
+<img src="http://brckhmptn.com/images/bh-gothic-nu.png" width="125px">
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "http://brckhmptn.com/m";
+}
+//-->
+</script>	
+
 <img src="guy.jpeg" align="left" style="width: 20%; margin-right: 1%;">
 <p><b>
 
